@@ -12,7 +12,7 @@ export async function GET(req: NextRequest, { params }: { params: { id: string }
 
     const problem = await mongoose.connection.db
       .collection('problems')
-      .findOne({ id: id });  // Change this line
+      .findOne({ id: id }); 
 
     console.log("Problem found:", problem);
 
