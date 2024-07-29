@@ -1,9 +1,14 @@
-a coding platform.
+# tescode
 
-// video
+tescode is a coding platform that allow users to solve coding problems, track their progress and interact with various coding challeneges.
+
+https://github.com/user-attachments/assets/bfbd80cb-78bf-47ed-aa1f-1a2ddac0d230
 
 
-file strucute:
+### file structure
+
+
+```
 
 ├── public
 ├── src
@@ -69,16 +74,68 @@ file strucute:
 ├── layout.tsx
 ├── .env
 
+```
 
-note: add the required environment variables in .env (example file provided in .env.example)
+### note
 
-tech stack:
+add the required environment variables in `.env` (example file provided in `.env.example`).
 
-next.js
-mongodb
-typescript
-tailwind css
-node.js
+### development 
+
+you can fork this repo by clicking the fork button in the top right corner of the page.
+
+#### clone repository:
+
+```bash
+git clone https://github.com/<your-username>/tescode.git
+cd tescode
+```
+
+#### install dependencies:
+
+```bash
+npm install
+```
+
+#### set up environment variables:
+
+copy the `.env.example` file to `.env`:
+
+```bash
+cp .env.example .env
+```
+
+update the `.env` file with your configuration.
+
+#### run the development server:
+
+```bash
+npm run dev
+```
+
+#### build the project for production:
+
+```bash
+npm run build
+```
+
+#### start the production server:
+
+```bash
+npm start
+```
+
+## contributing
+
+if you would like to contribute, please open an isssue or submit a pull request with your changes.
+
+
+
+
+
+
+
+
 
 
 
