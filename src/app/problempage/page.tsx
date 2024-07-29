@@ -70,21 +70,6 @@ export default function ProblemPage() {
 
   const [userSolvedProblems, setUserSolvedProblems] = useState<Set<string>>(new Set());
 
-  // useEffect(() => {
-  //   const fetchProblems = async () => {
-  //     try {
-  //       const response = await axios.get('/api/getproblem');
-  //       setProblems(response.data);
-  //     } catch (error: any) {
-  //       console.error('error fetching problems: ', error);
-  //     } finally {
-  //       setLoading(false);
-  //     }
-  //   };
-
-  //   fetchProblems();
-  // }, [])
-
   useEffect(() => {
     const fetchData = async () => {
       try {
