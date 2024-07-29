@@ -47,13 +47,6 @@ const PreferenceNav: React.FC<PreferenceNavProps> = () => {
       </div>
 
       <div className="flex items-center m-2">
-        {/* <button className='preferenceBtn group'>
-              <div className='h-4 w-4 font-bold text-lg'>
-                  <AiOutlineSetting />
-              </div>
-              <div className='preferenceBtn-tooltip'>settings</div>
-          </button> */}
-
         <button className="preferenceBtn group" onClick={handleFullScreen}>
           <div className="h-4 w-4  font-bold text-lg">
             {!isFullScreen ? (
