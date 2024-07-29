@@ -1,36 +1,84 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+a coding platform.
 
-## Getting Started
+// video
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+file strucute:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+├── public
+├── src
+│   ├── app
+│   │   ├── api
+│   │   │   ├── getproblem
+│   │   │   │   └── route.ts
+│   │   │   ├── getUserProblemInteractions
+│   │   │   │   └── route.ts
+│   │   │   ├── problem
+│   │   │   │   └── route.ts
+│   │   │   ├── problemInteractions
+│   │   │   │   └── route.ts
+│   │   │   ├── problems
+│   │   │   │   └── [id]
+│   │   │   │       └── route.ts
+│   │   │   ├── updateInteraction
+│   │   │   │   └── route.ts
+│   │   │   ├── users
+│   │   │   │   ├── login
+│   │   │   │   │   └── route.ts
+│   │   │   │   ├── logout
+│   │   │   │   │   └── route.ts
+│   │   │   │   ├── me
+│   │   │   │   │   └── route.ts
+│   │   │   │   ├── signup
+│   │   │   │       └── route.ts
+│   │   ├── components
+│   │   ├── login
+│   │   │   └── page.tsx
+│   │   ├── mockproblems
+│   │   │   └── problems.ts
+│   │   ├── problempage
+│   │   │   └── page.tsx
+│   │   ├── profile
+│   │   │   └── page.tsx
+│   │   ├── signup
+│   │   │   └── page.tsx
+│   │   ├── solutionpage
+│   │   │   └── [pid]
+│   │   │       └── page.tsx
+│   │   └── page.tsx
+│   ├── dbconfig
+│   ├── helpers
+│   │   └── getDataFromToken.ts
+│   ├── models
+│   │   ├── problemModel.ts
+│   │   ├── userModel.js
+│   │   └── userProblemInteractionModel.ts
+│   ├── utils
+│   │   ├── problems
+│   │   │   ├── images
+│   │   │   ├── index.ts
+│   │   │   ├── jump-game.ts
+│   │   │   ├── reverse-linked-list.ts
+│   │   │   ├── search-a-2d-matrix.ts
+│   │   │   ├── two-sum.ts
+│   │   │   └── valid-parentheses.ts
+│   │   ├── types
+│   │   │   └── problem.ts
+│   └── middleware.ts
+├── globals.css
+├── layout.tsx
+├── .env
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+note: add the required environment variables in .env (example file provided in .env.example)
 
-## Learn More
+tech stack:
 
-To learn more about Next.js, take a look at the following resources:
+next.js
+mongodb
+typescript
+tailwind css
+node.js
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
