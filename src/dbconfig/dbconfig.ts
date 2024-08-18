@@ -8,8 +8,8 @@ export async function connect() {
     return;
   }
 
-  if (!process.env.MONGO_URI) {
-    throw new Error('MONGO_URI is not defined in the environment variables');
+  if (!process.env.MONGODB_URI) {
+    throw new Error('MONGODB_URI is not defined in the environment variables');
   }
 
   try {
