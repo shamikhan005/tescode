@@ -39,7 +39,7 @@ export default function Home() {
             </div>
           </div>
           <div className="w-full md:w-1/2">
-            <img
+            <Image
               src="image1.png"
               alt="image"
               className="w-full h-auto object-cover"
