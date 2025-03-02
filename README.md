@@ -87,7 +87,7 @@ you can fork this repo by clicking the fork button in the top right corner of th
 #### clone repository:
 
 ```bash
-git clone https://github.com/<your-username>/tescode.git
+git clone https://github.com/shamikhan005/tescode.git
 cd tescode
 ```
 
